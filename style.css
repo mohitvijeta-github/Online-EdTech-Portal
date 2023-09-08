@@ -1,36 +1,43 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-.nav{
-    padding:0 5px;
+*{
+    padding: 0px 2px;
+    background-color: hsl(160, 16%, 96%);
 }
 
+
 ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+   display: grid;
     list-style:none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.2fr 0.5fr 0.5fr;
+    ;
+    gap: 5px;
 }
 .img-logo{
     width: 40%;
 }
 
 li button{
-    background-color:#19C37D ;
     border: none;
 }
 .nav-btn{
     color: #fff;
+    background-color:#19C37D ;
 }
 a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 16px;
+    color: black;
 }
 
-.nav-logo{
- 
-}
+
 .nav-list{
     display: flex; 
     gap: 50px;
@@ -39,12 +46,68 @@ a{
     color: #19C37D;
     font-size: 16.5px;
 }
+
 #nav-icon{
     font-size: 18px;
 }
 
-.nav-sign{
+.heading{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #2d2a2a;
+    padding: 5px 10px;
+}
+.sub-heading{
+   
+    font-weight: 400;
+    color: #2d2a2a;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+
+}
+
+.home__search {
     display: flex;
-    padding-left: 200px;
-    gap: 10px;
+    position: relative;
+    border: 0 none white;
+    margin-top: 30px;
+  }
+  
+  .search__input {
+    border: 0 none white;
+    background-color: #fff;
+    width: 30%;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .search__icon {
+    position: absolute;
+    left: 15px;
+    top: 36%;
+    color: hsl(208, 15%, 28%);
+    opacity: 0.4;
+    font-size: 18px;
+  }
+  
+  .search__btn {
+    border: 0 none;
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 20px 25px;
+    background-color:#19C37D;
+    color: #fff;
+    font-size: 18px ;
+  }
+  
+.poster{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+   
 }
