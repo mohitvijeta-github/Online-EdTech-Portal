@@ -1,34 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online EdTech Portal</title>
-   <!---Icon Library-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--=============== UNICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-   <header>
-    <div class="nav container">
-    <ul>
-        <div class="nav-logo">
-        <li><a href="index.html"><img src="assets/logo.png" class="img-logo"></a></li>
+
+    <title>Educational Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/logo.png" alt="" class="nav__logo-img" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Courses</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="uil uil-multiply"></i>
+          </div>
         </div>
-        <div class="nav-list">
-        <li><a href="index.html" class="active-link">Home</a></li>
-        <li><a href="#" class="active-link">Courses </a></li>
-        <li><a href="#" class="active-link">About</a></li>
-        <li><a href="#" class="active-link">My learning</a></li>
-        <li><a href="#" class="active-link">Portal</a></li>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+          </div>
+
+          <a href="#" class="nav__link sign__in-desktop">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In
+          </a>
+
+          <a href="#" class="btn sign__in">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In
+          </a>
+
+          <a href="#" class="btn get__started">Get Started</a>
         </div>
-        
-        <div class="nav-sign">
-        <li><a href="#" class="active-link"> <i class="uil uil-signout" id="nav-icon"></i> Sign In</a></li>
-        <li><button type="submit"><a href="#" class="nav-btn" >Get Started</a></button></li>
-    </div>
-    </ul>
-</div>
-   </header>
-</body>
+      </nav>
+
+      <div class="nav__overlay" id="nav-overlay"></div>
+    </header>
+
+    <!--=============== HOME ===============-->
+    <section class="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">  Unlock Your Potential, Learn Anywhere, Anytime!</h1>
+          <p class="home__description">
+            Discover endless opportunities through our convenient and flexible <br>online learning platform. Start your journey to success today!
+          </p>
+          <div class="home__search">
+            <i class="fa-sharp fa-solid fa-magnifying-glass search__icon"></i>
+            <input
+              type="text"
+              placeholder="Search Your Courses"
+              class="search__input"
+            />
+            <button class="search__btn btn">Search</button>
+          </div>
+        </div>
+
+        <img src="assets/poster.png" alt="" class="home__img" />
+      </div>
+    </section>
+
+    <!--=============== STATS ===============-->
+    <section class="stats">
+      <div class="stats__container container grid">
+        <div class="stats__item">
+          <div class="stats__icon">
+            <i class="fa-sharp fa-solid fa-book-journal-whills"></i>
+          </div>
+
+          <div class="stats__data">
+            <h3 class="stats__title">100+ Courses</h3>
+            <p class="stats__description">
+              A vast library of courses on a wide range of topics, all available for you to learn from, now and forever.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats__item">
+          <div class="stats__icon">
+            <i class="fa-solid fa-business-time"></i>
+          </div>
+
+          <div class="stats__data">
+            <h3 class="stats__title">Lifetime Access</h3>
+            <p class="stats__description">
+              Learn at your own pace, anywhere, anytime with lifetime access to all course materials.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats__item">
+          <div class="stats__icon">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+
+          <div class="stats__data">
+            <h3 class="stats__title">1M+ Enrolled</h3>
+            <p class="stats__description">
+              Join over 1 million learners who have taken our courses and transformed their lives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__container container">
+     <div class="footer__field">
+      <ul class="footer__item">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us </a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Careers</a> </li> 
+      </ul>
+      <ul class="footer__item"> 
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Affiliate </a></li>
+      <li><a href="#">Help and Support</a></li>
+      <li><a href="#">Terms</a>  </li>
+      <li><a href="#">Cookie Setting</a>  </li>
+      </ul> 
+    <ul class="footer__item">
+   
+      <li><a href="index.html">EdTech</a></li>
+      <li><a href="#">Tech on EdTech</a></li>
+      <li><a href="#">Blog </a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Accessibility statement</a>  </li>
+    </ul> 
+
+      </div>
+    </footer>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
